@@ -8,12 +8,12 @@ This repo contains a set of Python, Expect and BASH scripts designed to 'blackho
 
 ### Requirements
 
-You'll need access to some Cisco routers, with privelege level high enough to run 'enable' and 'conf t'.
-A file called 'device-list.txt' with a list of routers, either hostnames or IP addresses, in the same directory as these scripts.
-Python, Expect and BASH obviously.  See notes below for help installing these.
-Optionally, but recommeded, is PIP, makes for installing some little requirements much easier.
-Python library 'netaddr'.  Just do a "pip install netaddr"
-That's it!
+* You'll need access to some Cisco routers, with privelege level high enough to run 'enable' and 'conf t'.
+* A file called 'device-list.txt' with a list of routers, either hostnames or IP addresses, in the same directory as these scripts.
+* Python, Expect and BASH obviously.  See notes below for help installing these.
+* Optionally, but recommeded, is PIP, makes for installing some little requirements much easier.
+* Python library 'netaddr'.  Just do a "pip install netaddr"
+* That's it!
 
 ### Installation Instructions
 
