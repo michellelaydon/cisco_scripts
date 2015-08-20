@@ -17,9 +17,17 @@ This repo contains a set of Python, Expect and BASH scripts designed to 'blackho
 ### Installation Instructions
 
 * Install Git
-** sudo apt-get install git
-** git config --global user.name "<yourusername>"
-** git config --global user.email "<your@emailaddy>"
+  * sudo apt-get install git
+  * git config --global user.name "yourusername"
+  * git config --global user.email "your@emailaddy"
+
+* Checkout this repository
+  * git@github.com:KeyInfo/cisco_scripts.git
+
+* Create a device-list.txt file with a list of your routers, one per line.
 
 ### Script Execution
+
+* Run the blackhole.py file
+  * python blackhole.py
 
