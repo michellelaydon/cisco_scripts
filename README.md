@@ -1,10 +1,10 @@
-# cisco_scripts
+# Cisco Scripts
 
 Authored Aug 20, 2015 by Ken Lemoine
 
 ### Summary
 
-This repo contains a set of Python, Expect and BASH scripts designed to 'blackhole' an IP address on multiple Cisco routers.  This will effectively send all traffic from this IP to the 'bitbucket'.  The use case for us is to blackhole any IP that is involved in a DDos attack.  The next step will be to add a set of similiar scripts to remove any blackholed IP's after the attack is over.
+This repo contains a set of Python, Expect and BASH scripts designed to 'blackhole' an IP address on multiple Cisco routers.  This will effectively send all traffic from this IP to the 'bitbucket'.  The use case for us is to blackhole any IP that is involved in a DDos attack. 
 
 ### Requirements
 
@@ -13,9 +13,13 @@ This repo contains a set of Python, Expect and BASH scripts designed to 'blackho
 * Python, Expect and BASH obviously.  See notes below for help installing these.
 * Optionally, but recommeded, is PIP, makes for installing some little requirements much easier.
 * Python library 'netaddr'.  Just do a "pip install netaddr"
-* That's it!
 
 ### Installation Instructions
+
+* Install Git
+** sudo apt-get install git
+** git config --global user.name "<yourusername>"
+** git config --global user.email "<your@emailaddy>"
 
 ### Script Execution
 
