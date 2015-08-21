@@ -40,7 +40,7 @@ password = raw_input("Enter your router password: ")
 username = getpass.getuser()
 seq_num = str()
 
-# Open our device list file, assign a file handle and loop thru the devices
+# Open our device list file (read-only), assign a file handle and loop thru the devices
 fh = open("device-list.txt","r")
 devices = fh.readlines()
 for device in devices:
@@ -56,18 +56,9 @@ for device in devices:
 	for line in fh:								# pull the sequence number from the out.txt file
         	words = line.split()
 		if not line.startswith("ip prefix-list Blackhole seq") : continue
-#		lst.append(words)	
-#		print words[4]	
-#		sys.exit(0)
-		seq_num = words[4] 				# grab the sequence num
-		seq_num = int(seq_num)				# convert from string to integer
-		#if seq_num < 999:
-		#	seq_num += 1001 			# increment sequence num. 
-								# e.g. if seq num is 5, this'll make it 1006
-		#else:
-		seq_num += 1					# e.g. if seq num is 1005, this makes it 1006
-		seq_num = str(seq_num)				# convert back to string
-#		print seq_num
-#		sys.exit(0)
+		seq_num = words[4] 						# grab the sequence num
+		seq_num = int(seq_num)						# convert from string to integer
+		seq_num += 1							# increment seq_num 
+		seq_num = str(seq_num)						# convert back to string
 
 	os.system("./configure-cisco.sh %s %s %s %s" % (device,password,seq_num,ipaddy)) # configure the router!
