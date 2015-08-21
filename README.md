@@ -38,3 +38,10 @@ This repo contains a set of Python, Expect and BASH scripts designed to 'blackho
 * Run the blackhole.py file
   * python blackhole.py
 
+### Validation
+
+* Run this command on the router to validate, if the process was successful you should see some output like below
+  * sho run | inc (-ipaddresshere-)
+ network <-IP-Address-> mask 255.255.255.255
+ip route <-IP-Address-> 255.255.255.255 Null0
+ip prefix-list Blackhole seq xxxx permit <-IP-Address->/32
