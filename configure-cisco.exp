@@ -4,7 +4,6 @@
  set hostname [lindex $argv 0]
  set username $env(USER)
  set password [lindex $argv 1]
-# set enablepassword [lindex $argv 2]
  set seqnum [lindex $argv 2]
  set ipaddy [lindex $argv 3]
  
