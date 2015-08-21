@@ -47,7 +47,6 @@ for device in devices:
         device = device.rstrip()						# strip out whitespace and carriage returns
 	os.system("./getseqnums.sh %s %s %s" % (device,username,password))	# Get sequence num, output to out.txt file
 	fname = 'outfiles/out.txt' 						# create handle for out.txt file
-	lst = list()								# instantiate our list
 	try:
         	fh = open(fname)						# open out.txt file for reading sequence number
 	except:
