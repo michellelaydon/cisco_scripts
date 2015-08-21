@@ -56,10 +56,18 @@ for device in devices:
 	for line in fh:								# pull the sequence number from the out.txt file
         	words = line.split()
 		if not line.startswith("ip prefix-list Blackhole seq") : continue
-		lst.append(words)	
-		seq_num = (line[29:30]) 	# grab the sequence num
-		seq_num = int(seq_num)		# convert from string to integer
-		seq_num += 1000 		# increment sequence num.  We're using nums > 1000 to not clobber manual entries
-		seq_num = str(seq_num)		# convert back to string
+#		lst.append(words)	
+#		print words[4]	
+#		sys.exit(0)
+		seq_num = words[4] 				# grab the sequence num
+		seq_num = int(seq_num)				# convert from string to integer
+		#if seq_num < 999:
+		#	seq_num += 1001 			# increment sequence num. 
+								# e.g. if seq num is 5, this'll make it 1006
+		#else:
+		seq_num += 1					# e.g. if seq num is 1005, this makes it 1006
+		seq_num = str(seq_num)				# convert back to string
+#		print seq_num
+#		sys.exit(0)
 
 	os.system("./configure-cisco.sh %s %s %s %s" % (device,password,seq_num,ipaddy)) # configure the router!

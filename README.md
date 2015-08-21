@@ -29,7 +29,8 @@ This repo contains a set of Python, Expect and BASH scripts designed to 'blackho
   * sudo apt-get -y install python-pip
   * pip -v  (verify's successful install)
 
-* Ensure 'netaddr' Python library is installed. Just do a 'pip show netaddr'
+* Install 'netaddr' Python library. 
+  * pip install netaddr
 
 ### Script Execution
 
