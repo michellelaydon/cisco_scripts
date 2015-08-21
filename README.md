@@ -10,7 +10,8 @@ This repo contains a set of Python, Expect and BASH scripts designed to 'blackho
 
 * Access to some Cisco routers, with privelege level high enough to run 'enable' and 'conf t'.
 * A file (not included) called 'device-list.txt' with a list of router hostnames or IP's, in the same directory as these scripts.
-* Python, Expect and BASH obviously.
+* Python, Expect and BASH obviously.  A Linux OS would be easiest, this was built and tested on Ubuntu 14.10, but any flavor should work fine.
+
 
 ### Installation Instructions
 
