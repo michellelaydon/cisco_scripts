@@ -4,7 +4,7 @@ Authored Aug 20, 2015 by Ken Lemoine
 
 ### Summary
 
-This repo contains a set of Python, Expect and BASH scripts designed to 'blackhole' an IP address on multiple Cisco routers.  This will effectively send all traffic from this IP to the 'bitbucket'.  The use case for us is to blackhole any IP that is involved in a DDos attack. 
+This repo contains a set of Python, Expect and BASH scripts designed to 'blackhole' an IP address on multiple Cisco routers.  This will effectively send all traffic from this IP to the 'bitbucket'.  The use case for us is to blackhole any IP that is involved in a DDos attack.  Everything is logged to ~/results.txt.
 
 ### Requirements
 
@@ -49,3 +49,7 @@ This repo contains a set of Python, Expect and BASH scripts designed to 'blackho
 ip route <-IP-Address-> 255.255.255.255 Null0
 ip prefix-list Blackhole seq xxxx permit <-IP-Address->/32
 ```
+
+### Troubleshooting
+
+* Check your home directory for the log file, ~/results.txt
