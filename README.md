@@ -24,7 +24,13 @@ This repo contains a set of Python, Expect and BASH scripts designed to 'blackho
 * Checkout this repository
   * git clone https://github.com/KeyInfo/cisco_scripts.git 
 
+* Install Expect
+  * sudo apt-get install expect
+
 * Create a device-list.txt file with a list of your routers, one per line.
+
+* Create 'outfiles' directory
+  * mkdir outfiles 
 
 * Install (optional) Pip. Here's the Ubuntu steps -
   * sudo apt-get update
