@@ -22,7 +22,7 @@ This repo contains a set of Python, Expect and BASH scripts designed to 'blackho
   * git config --global user.email "your@emailaddy"
 
 * Checkout this repository
-  * git@github.com:KeyInfo/cisco_scripts.git
+  * git clone https://github.com/KeyInfo/cisco_scripts.git 
 
 * Create a device-list.txt file with a list of your routers, one per line.
 
