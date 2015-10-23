@@ -42,7 +42,7 @@ This repo contains a set of Python, Expect and BASH scripts designed to 'blackho
 
 ### Script Execution
 
-* Run the blackhole.py file
+* Run the blackholeip.py file
   * python blackholeip.py
 
 ### Validation
